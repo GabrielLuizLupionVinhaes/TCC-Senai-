@@ -1,2 +1,2 @@
-# TCC-Senai-
-Trabalho de conclusao de curso.Atendimento automato
+# TCC
+Projeto do SENAI sobre auto atendimento

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13175A5B-35AA-4E44-B13A-C30E8F4C1E24}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Auto_Atendimento</RootNamespace>
+    <AssemblyName>Auto-Atendimento</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente _Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente _Inicio.Designer.cs">
+      <DependentUpon>Cliente _Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente_Lanche_Pronto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente_Lanche_Pronto.Designer.cs">
+      <DependentUpon>Cliente_Lanche_Pronto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente_Montar_Lanche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente_Montar_Lanche.Designer.cs">
+      <DependentUpon>Cliente_Montar_Lanche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="Confirma_S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirma_S.Designer.cs">
+      <DependentUpon>Confirma_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirma_XBa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirma_XBa.Designer.cs">
+      <DependentUpon>Confirma_XBa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirma_XBu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirma_XBu.Designer.cs">
+      <DependentUpon>Confirma_XBu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirma_XE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirma_XE.Designer.cs">
+      <DependentUpon>Confirma_XE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirma_XF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirma_XF.Designer.cs">
+      <DependentUpon>Confirma_XF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirma_XS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirma_XS.Designer.cs">
+      <DependentUpon>Confirma_XS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAtendente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAtendente.Designer.cs">
+      <DependentUpon>frmAtendente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCozinheiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCozinheiro.Designer.cs">
+      <DependentUpon>frmCozinheiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmObrigado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmObrigado.Designer.cs">
+      <DependentUpon>FrmObrigado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cliente _Inicio.resx">
+      <DependentUpon>Cliente _Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente_Lanche_Pronto.resx">
+      <DependentUpon>Cliente_Lanche_Pronto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente_Montar_Lanche.resx">
+      <DependentUpon>Cliente_Montar_Lanche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirma_S.resx">
+      <DependentUpon>Confirma_S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirma_XBa.resx">
+      <DependentUpon>Confirma_XBa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirma_XBu.resx">
+      <DependentUpon>Confirma_XBu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirma_XE.resx">
+      <DependentUpon>Confirma_XE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirma_XF.resx">
+      <DependentUpon>Confirma_XF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirma_XS.resx">
+      <DependentUpon>Confirma_XS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAtendente.resx">
+      <DependentUpon>frmAtendente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCozinheiro.resx">
+      <DependentUpon>frmCozinheiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmObrigado.resx">
+      <DependentUpon>FrmObrigado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
